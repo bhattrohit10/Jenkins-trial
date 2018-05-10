@@ -8,7 +8,7 @@ pipeline {
             echo 'Pipeline starting'
           }
         }
-        stage('') {
+        stage('error') {
           steps {
             echo 'Multibrach Pipeline starting'
           }
@@ -27,7 +27,7 @@ pipeline {
     }
     stage('deploy') {
       steps {
-        archiveArtifacts 'new'
+        echo 'Pipeline completed'
       }
     }
   }
